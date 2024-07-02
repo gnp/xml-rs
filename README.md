@@ -133,7 +133,7 @@ XML documents - if a document is not well-formed, this program will exit with an
 ## Parsing untrusted inputs
 
 The parser is written in safe Rust subset, so by Rust's guarantees the worst that it can do is to cause a panic.
-You can use `ParserConfig` to set limits on maximum lenghts of names, attributes, text, entities, etc.
+You can use `ParserConfig` to set limits on maximum lengths of names, attributes, text, entities, etc.
 You should also set a maximum document size via `io::Read`'s [`take(max)`](https://doc.rust-lang.org/stable/std/io/trait.Read.html#method.take) method.
 
 Writing XML documents
